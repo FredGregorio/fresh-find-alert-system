@@ -39,7 +39,6 @@ const Index = () => {
                 className="w-32 h-auto mx-auto"
               />
             </div>
-            <h1 className="text-4xl font-bold text-gray-600 text-center">SGAS</h1>
             <p className="text-sm text-gray-500 text-center">Sistema de Gestão de Armazém Simplificado</p>
           </div>
 
