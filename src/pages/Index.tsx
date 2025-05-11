@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Index = () => {
   const [username, setUsername] = useState("");
@@ -33,7 +34,7 @@ const Index = () => {
           <div className="bg-white p-8 flex flex-col items-center justify-center space-y-4 w-full md:w-1/2">
             <div className="text-amber-500">
               <img 
-                src="/lovable-uploads/edb48870-2fa0-4719-915e-5456b9ff8491.png" 
+                src="/lovable-uploads/8c508f49-3a48-492c-a233-071227efde2c.png" 
                 alt="SGAS Logo" 
                 className="w-32 h-auto mx-auto"
               />
@@ -45,8 +46,15 @@ const Index = () => {
           {/* Right side with login form */}
           <div className="bg-primary p-8 w-full md:w-1/2 relative">
             <div className="flex flex-col items-center mb-6">
-              <h2 className="text-2xl font-bold text-white mb-1">NOSSO</h2>
-              <p className="text-white text-sm">ATACAREJO</p>
+              <div className="w-32 mb-2">
+                <AspectRatio ratio={16/9} className="bg-transparent">
+                  <img 
+                    src="/lovable-uploads/aebabd8e-2fc2-4994-91e2-0a2412eff0d5.png" 
+                    alt="NOSSO ATACAREJO Logo" 
+                    className="object-contain"
+                  />
+                </AspectRatio>
+              </div>
               <h3 className="text-xl font-bold text-white mt-4">Login</h3>
             </div>
 
