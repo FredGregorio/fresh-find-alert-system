@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
@@ -34,14 +33,17 @@ const Index = () => {
         <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'}`}>
           {/* Logo and title section */}
           <div className="bg-white p-6 md:p-8 flex flex-col items-center justify-center space-y-6 w-full md:w-1/2">
-            <div className="w-full max-w-[180px] mx-auto">
+            <div className="w-full max-w-[180px] mx-auto transform hover:scale-105 transition-transform duration-300">
               <img 
                 src="/lovable-uploads/8c508f49-3a48-492c-a233-071227efde2c.png" 
-                alt="Logo" 
-                className="w-full h-auto"
+                alt="SGAS Logo" 
+                className="w-full h-auto drop-shadow-md"
               />
             </div>
-            <p className="text-sm font-medium text-gray-500 text-center">Sistema de Gestão de Armazém Simplificado</p>
+            <div className="text-center">
+              <h2 className="font-bold text-primary text-lg md:text-xl">Sistema de Gestão</h2>
+              <h3 className="text-gray-700 text-md md:text-lg">de Armazém Simplificado</h3>
+            </div>
           </div>
 
           {/* Login form section */}
