@@ -37,7 +37,7 @@ const Index = () => {
             <div className="w-full max-w-[180px] mx-auto">
               <img 
                 src="/lovable-uploads/8c508f49-3a48-492c-a233-071227efde2c.png" 
-                alt="SGAS Logo" 
+                alt="Logo" 
                 className="w-full h-auto"
               />
             </div>
@@ -47,16 +47,7 @@ const Index = () => {
           {/* Login form section */}
           <div className="bg-primary p-6 md:p-8 w-full md:w-1/2 relative">
             <div className="flex flex-col items-center mb-8">
-              <div className="w-full max-w-[180px] mb-4">
-                <AspectRatio ratio={16/9} className="bg-transparent">
-                  <img 
-                    src="/lovable-uploads/aebabd8e-2fc2-4994-91e2-0a2412eff0d5.png" 
-                    alt="NOSSO ATACAREJO Logo" 
-                    className="object-contain"
-                  />
-                </AspectRatio>
-              </div>
-              <h3 className="text-xl font-bold text-white mt-2">Login</h3>
+              <h3 className="text-xl font-bold text-white">Login</h3>
             </div>
 
             <form onSubmit={handleLogin} className="space-y-5">
