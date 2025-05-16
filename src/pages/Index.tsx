@@ -33,16 +33,16 @@ const Index = () => {
         <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'}`}>
           {/* Logo and title section */}
           <div className="bg-white p-6 md:p-8 flex flex-col items-center justify-center space-y-6 w-full md:w-1/2">
-            <div className="w-full max-w-[180px] mx-auto transform hover:scale-105 transition-transform duration-300">
+            <div className="w-full max-w-[180px] mx-auto transform hover:scale-105 transition-transform duration-300 fadeIn">
               <img 
                 src="/lovable-uploads/8c508f49-3a48-492c-a233-071227efde2c.png" 
                 alt="SGAS Logo" 
-                className="w-full h-auto drop-shadow-md"
+                className="w-full h-auto drop-shadow-lg"
               />
             </div>
-            <div className="text-center">
-              <h2 className="font-bold text-primary text-lg md:text-xl">Sistema de Gestão</h2>
-              <h3 className="text-gray-700 text-md md:text-lg">de Armazém Simplificado</h3>
+            <div className="text-center space-y-1 fadeIn" style={{ animationDelay: "0.2s" }}>
+              <h2 className="font-bold text-primary text-xl md:text-2xl tracking-tight">Sistema de Gestão</h2>
+              <h3 className="text-gray-700 text-md md:text-lg font-medium">de Armazém Simplificado</h3>
             </div>
           </div>
 
@@ -60,7 +60,7 @@ const Index = () => {
                   placeholder="Usuário"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  className="bg-white/90"
+                  className="bg-white/90 focus:bg-white transition-colors"
                 />
               </div>
 
@@ -71,13 +71,13 @@ const Index = () => {
                   placeholder="Senha"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="bg-white/90"
+                  className="bg-white/90 focus:bg-white transition-colors"
                 />
               </div>
 
               <Button 
                 type="submit" 
-                className="w-full bg-white text-primary hover:bg-gray-100 mt-4 text-base font-medium"
+                className="w-full bg-white text-primary hover:bg-gray-100 mt-4 text-base font-medium shadow-md hover:shadow-lg transition-all"
               >
                 Entrar
               </Button>
